@@ -29,7 +29,7 @@ CREATE TABLE Dept_EMP_Junction (
 
 
 CREATE TABLE Salaries (
-	emp_no INTEGER,
+	emp_no INTEGER NOT NULL PRIMARY KEY,
 	salary INTEGER,
 	FOREIGN KEY (emp_no) REFERENCES Employees(emp_no)
 );
